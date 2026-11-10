@@ -1,0 +1,49 @@
+name: Fetch TfL status
+
+on:
+  schedule:
+    # Every 10 minutes, 05:00–23:59 UTC (covers 6am–11pm London in GMT and BST)
+    - cron: "*/10 5-23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fetch line status from the TfL Unified API
+        run: |
+          set -euo pipefail
+          URL="https://api.tfl.gov.uk/Line/Mode/tube,elizabeth-line,dlr,overground,tram/Status"
+          curl -fsS --retry 3 --retry-delay 5 -m 30 "$URL" -o raw.json
+          jq --arg at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '{
+            fetchedAt: $at,
+            source: "TfL Unified API",
+            lines: [ .[] | {
+              id, name, mode: .modeName,
+              status: ([.lineStatuses[].statusSeverityDescription] | unique | join(", ")),
+              severity: ([.lineStatuses[].statusSeverity] | min),
+              reason: ([.lineStatuses[] | select(.reason != null) | .reason] | unique | join(" ") | gsub("\\s+"; " ")),
+              good: ([.lineStatuses[].statusSeverity] | all(. == 10))
+            } ] | sort_by(.severity, .name)
+          }' raw.json > status.json
+          jq -e '.lines | length > 10' status.json > /dev/null
+          echo "Lines: $(jq '.lines|length' status.json), disrupted: $(jq '[.lines[]|select(.good|not)]|length' status.json)"
+
+      - name: Publish to the data branch (single commit, no history build-up)
+        run: |
+          set -euo pipefail
+          mkdir pub && mv status.json pub/ && cd pub
+          git init -q -b data
+          git config user.name "tfl-status bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add status.json
+          git commit -qm "TfL status $(jq -r .fetchedAt status.json)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data
