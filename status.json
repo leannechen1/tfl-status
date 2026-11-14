@@ -1,0 +1,186 @@
+{
+  "fetchedAt": "2026-11-14T21:40:16Z",
+  "source": "TfL Unified API",
+  "lines": [
+    {
+      "id": "suffragette",
+      "name": "Suffragette",
+      "mode": "overground",
+      "status": "Part Suspended",
+      "severity": 3,
+      "reason": "Suffragette Line: No service between Barking Riverside and Barking for the rest of the day due to a points failure at Barking. GOOD SEVICE on the rest of the line. ",
+      "good": false
+    },
+    {
+      "id": "victoria",
+      "name": "Victoria",
+      "mode": "tube",
+      "status": "Part Suspended, Severe Delays",
+      "severity": 3,
+      "reason": "Victoria Line: No service between Seven Sisters and Kings Cross and SEVERE DELAYS on the rest of the line while we deal with an animal on the track. ",
+      "good": false
+    },
+    {
+      "id": "waterloo-city",
+      "name": "Waterloo & City",
+      "mode": "tube",
+      "status": "Planned Closure, Service Closed",
+      "severity": 4,
+      "reason": "Waterloo & City line: service operates 06:00 until 00:30, Monday to Friday only. There is no service on Saturdays, Sundays and on bank/public holidays. Waterloo and City Line: Service will resume at 06:00 on Monday. ",
+      "good": false
+    },
+    {
+      "id": "northern",
+      "name": "Northern",
+      "mode": "tube",
+      "status": "Part Closure",
+      "severity": 5,
+      "reason": "NORTHERN LINE: From 0130 Saturday 14 until 0130 Sunday 15 November, no service between Euston (Bank Branch) / Charing Cross and Morden / Battersea Power Station. There will be no Friday Night Tube service between Charing Cross and Morden. Replacement bus services operate during day hours only, for Night journeys please use Night Bus services",
+      "good": false
+    },
+    {
+      "id": "circle",
+      "name": "Circle",
+      "mode": "tube",
+      "status": "Severe Delays",
+      "severity": 6,
+      "reason": "Circle Line: Severe delays due to an earlier trespasser on the track at Paddington. Tickets are being accepted on London Buses. ",
+      "good": false
+    },
+    {
+      "id": "district",
+      "name": "District",
+      "mode": "tube",
+      "status": "Minor Delays, Severe Delays",
+      "severity": 6,
+      "reason": "District Line: Severe delays between High Street Kensington and Edgware Road due to an earlier trespasser on the track. MINOR DELAYS on the rest of the line due to train cancellations. Tickets are being accepted on London Buses ",
+      "good": false
+    },
+    {
+      "id": "hammersmith-city",
+      "name": "Hammersmith & City",
+      "mode": "tube",
+      "status": "Severe Delays",
+      "severity": 6,
+      "reason": "Hammersmith and City Line: Severe delays due to an earlier trespasser on the track at Paddington. Tickets are being accepted on London Buses. ",
+      "good": false
+    },
+    {
+      "id": "metropolitan",
+      "name": "Metropolitan",
+      "mode": "tube",
+      "status": "Severe Delays",
+      "severity": 6,
+      "reason": "Metropolitan Line: Severe delays due to an earlier trespasser on the track at Paddington. Tickets are being accepted on London Buses. ",
+      "good": false
+    },
+    {
+      "id": "central",
+      "name": "Central",
+      "mode": "tube",
+      "status": "Minor Delays",
+      "severity": 9,
+      "reason": "Central Line: Minor delays due to train cancellations. ",
+      "good": false
+    },
+    {
+      "id": "windrush",
+      "name": "Windrush",
+      "mode": "overground",
+      "status": "Minor Delays",
+      "severity": 9,
+      "reason": "Windrush Line: Minor delays due to an earlier customer incident at Haggerston. ",
+      "good": false
+    },
+    {
+      "id": "bakerloo",
+      "name": "Bakerloo",
+      "mode": "tube",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "dlr",
+      "name": "DLR",
+      "mode": "dlr",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "elizabeth",
+      "name": "Elizabeth line",
+      "mode": "elizabeth-line",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "jubilee",
+      "name": "Jubilee",
+      "mode": "tube",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "liberty",
+      "name": "Liberty",
+      "mode": "overground",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "lioness",
+      "name": "Lioness",
+      "mode": "overground",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "mildmay",
+      "name": "Mildmay",
+      "mode": "overground",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "piccadilly",
+      "name": "Piccadilly",
+      "mode": "tube",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "tram",
+      "name": "Tram",
+      "mode": "tram",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "weaver",
+      "name": "Weaver",
+      "mode": "overground",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    }
+  ]
+}
