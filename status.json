@@ -1,0 +1,186 @@
+{
+  "fetchedAt": "2026-11-28T15:20:36Z",
+  "source": "TfL Unified API",
+  "lines": [
+    {
+      "id": "piccadilly",
+      "name": "Piccadilly",
+      "mode": "tube",
+      "status": "Part Suspended",
+      "severity": 3,
+      "reason": "Piccadilly Line: No service between Uxbridge and Rayners Lane to prevent damage to train wheels caused by significant leaf fall expected during severe weather conditions. Tickets are being accepted on London Buses. GOOD SERVICE on the rest of the line. ",
+      "good": false
+    },
+    {
+      "id": "hammersmith-city",
+      "name": "Hammersmith & City",
+      "mode": "tube",
+      "status": "Planned Closure",
+      "severity": 4,
+      "reason": "HAMMERSMITH & CITY LINE: Saturday 28 and Sunday 29 November, no service on the entire line. There will also be no CIRCLE LINE service between Hammersmith / High Street Kensington and Tower Hill (via Kings Cross St Pancras). Use DISTRICT LINE services between Aldgate East and Barking.",
+      "good": false
+    },
+    {
+      "id": "liberty",
+      "name": "Liberty",
+      "mode": "overground",
+      "status": "Planned Closure",
+      "severity": 4,
+      "reason": "LIBERTY LINE: Saturday 28 and Sunday 29 November, no service between Romford and Upminster. Use local London Buses services 165 248 and 370 instead.",
+      "good": false
+    },
+    {
+      "id": "waterloo-city",
+      "name": "Waterloo & City",
+      "mode": "tube",
+      "status": "Planned Closure",
+      "severity": 4,
+      "reason": "Waterloo & City line: service operates 06:00 until 00:30, Monday to Friday only. There is no service on Saturdays, Sundays and on bank/public holidays.",
+      "good": false
+    },
+    {
+      "id": "circle",
+      "name": "Circle",
+      "mode": "tube",
+      "status": "Part Closure",
+      "severity": 5,
+      "reason": "Circle Line : Saturday 28 and Sunday 29 November - No service between Hammersmith and Tower Hill, Edgware Road and High Street Kensington due to planned engineering work.",
+      "good": false
+    },
+    {
+      "id": "district",
+      "name": "District",
+      "mode": "tube",
+      "status": "Part Closure",
+      "severity": 5,
+      "reason": "DISTRICT LINE: Saturday 28 and Sunday 29 November, no service between High Street Kensington and Edgware Road. There will also be no CIRCLE LINE service on this section.",
+      "good": false
+    },
+    {
+      "id": "elizabeth",
+      "name": "Elizabeth line",
+      "mode": "elizabeth-line",
+      "status": "Part Closure",
+      "severity": 5,
+      "reason": "ELIZABETH LINE: Saturday 28 and Sunday 29 November, no service between Maidenhead / Heathrow (all terminals) and Abbey Wood / Shenfield. Use PICCADILLY LINE services between Heathrow and Central London. LONDON PADDINGTON STATION will be closed on this day, with no HEATHROW EXPRESS services. GWR services will not run between Maidenhead / Greenford and Paddington, with limited long distance services to/from Euston. There will also be no GREATER ANGLIA services on these days between Shenfield / Southend Victoria / Southminster and Liverpool Street, use CENTRAL LINE connections between Ealing Broadway, West Acton (for Acton Main Line), Central London, Liverpool Street, Stratford and Newbury Park. Replacement bus services operate, not serving Iver, please use Langley instead.",
+      "good": false
+    },
+    {
+      "id": "metropolitan",
+      "name": "Metropolitan",
+      "mode": "tube",
+      "status": "Part Closure",
+      "severity": 5,
+      "reason": "METROPOLITAN LINE: Saturday 28 and Sunday 29 November, no service between Baker Street and Aldgate. There will also be no CIRCLE or HAMMERSMITH & CITY LINE services on this section.",
+      "good": false
+    },
+    {
+      "id": "windrush",
+      "name": "Windrush",
+      "mode": "overground",
+      "status": "Part Closure, Reduced Service",
+      "severity": 5,
+      "reason": "WINDRUSH LINE: From 0100 Saturday 28 and all day Sunday 29 November, including Friday and Saturday Night Overground, no service between Highbury & Islington and Battersea Park / Clapham Junction / New Cross / New Cross Gate. Use MILDMAY LINE services between Highbury & Islington, Canonbury and Dalston Kingsland. Replacement bus services operate. WINDRUSH LINE: Saturday 28 and Sunday 29 November, a reduced service operates between New Cross Gate and Crystal Palace / West Croydon.",
+      "good": false
+    },
+    {
+      "id": "bakerloo",
+      "name": "Bakerloo",
+      "mode": "tube",
+      "status": "Minor Delays",
+      "severity": 9,
+      "reason": "Bakerloo Line: Minor delays due to train cancellations. ",
+      "good": false
+    },
+    {
+      "id": "central",
+      "name": "Central",
+      "mode": "tube",
+      "status": "Minor Delays",
+      "severity": 9,
+      "reason": "Central Line: Minor delays between White City and Ealing Broadway/West Ruislip, and between Leytonstone and Epping/Hainault via Newbury Park due to train cancellations. GOOD SERVICE on the rest of the line. ",
+      "good": false
+    },
+    {
+      "id": "jubilee",
+      "name": "Jubilee",
+      "mode": "tube",
+      "status": "Minor Delays",
+      "severity": 9,
+      "reason": "Jubilee Line: Minor delays while we fix a faulty train at Waterloo. ",
+      "good": false
+    },
+    {
+      "id": "dlr",
+      "name": "DLR",
+      "mode": "dlr",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "lioness",
+      "name": "Lioness",
+      "mode": "overground",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "mildmay",
+      "name": "Mildmay",
+      "mode": "overground",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "northern",
+      "name": "Northern",
+      "mode": "tube",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "suffragette",
+      "name": "Suffragette",
+      "mode": "overground",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "tram",
+      "name": "Tram",
+      "mode": "tram",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "victoria",
+      "name": "Victoria",
+      "mode": "tube",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    },
+    {
+      "id": "weaver",
+      "name": "Weaver",
+      "mode": "overground",
+      "status": "Good Service",
+      "severity": 10,
+      "reason": "",
+      "good": true
+    }
+  ]
+}
